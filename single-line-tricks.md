@@ -13,3 +13,10 @@ x = max(d, key=d.get)
 print(x)
 ```
 `GOOGLY`
+
+3. Bit flipping
+```python3
+num = 1011010
+print(''.join(['0' if i is '1' else '1'  for i in num]))
+```
+Output: `0100101`
