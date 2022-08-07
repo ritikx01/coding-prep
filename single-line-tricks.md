@@ -20,3 +20,18 @@ num = 1011010
 print(''.join(['0' if i is '1' else '1'  for i in num]))
 ```
 Output: `0100101`
+
+4. Return mod of difference b/w two int
+```python3
+int1, int2 = 3, 5
+print(abs(int1 - int2))
+```
+Output: `2`
+
+5. Change the value of a list index
+```python3
+x = [0, 1, 2, 3, 3]
+x[4] = 4
+print(x)
+```
+Output: `[0, 1, 2, 3, 4]
