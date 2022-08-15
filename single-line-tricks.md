@@ -35,3 +35,10 @@ x[4] = 4
 print(x)
 ```
 Output: `[0, 1, 2, 3, 4]
+
+6. Remove duplicates from a list
+```python3
+a = [1, 2, 4, 3, 3, "RITIK", "RITIK"]
+print(list(dict.fromkeys(a)))			# This method is available after python 3.7
+```
+Output: `[1, 2, 4, 3, 'RITIK']`
