@@ -1,3 +1,21 @@
+For counting occurance only, Method 2 also works but if we want to perform any other operation
+like sorting or to get sum of some elements, list is not recommended, indeed we can use dictionaries
+which are slower than lists in general, but much faster when performing an operation like search etc.
+Method 1:  
+```python3
+a = [1, 2, 3, 4, 4]
+occurrence = {}
+for i in a:
+    if i not in occurrence:
+        occurrence[i] = 0
+    occurrence[i] += 1
+print(occurrence)
+```
+We can also use `Counter()` from builtin library collections. `from collections import Counter`.
+One more advantage of this method is that we don't need to use `ord()` function for counting letters
+like in the method 2.
+
+Method 2:  
 When counting occurance of letters or numbers in very large strings or very large numbers,
 say, the string is a paragraph of words or the number has 100 digits, we can use counting sort
 algorithm.  
