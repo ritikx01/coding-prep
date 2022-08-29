@@ -1,0 +1,20 @@
+TCS Codevita 2020, October.
+Question: Minimum number of coins required to make any denomination from 1 to N. Cumulative sum of coin should
+not exceed N
+
+```python3
+def coins(num):
+    five = (num - 4) // 5
+    if (num - five * 5) % 2 == 0:
+        one = 2
+    else:
+        one = 1
+    two = (num - five * 5 - one) // 2
+    return five, two, one
+
+print(coins(13))
+```
+Explanation: 
+No of 5 coins: (N - 4)//5 to find the multiple of 5 that is smaller than N and atleast 4 less than N. The remaining 4
+or more will be formed using 1 and 2 coins.
+
