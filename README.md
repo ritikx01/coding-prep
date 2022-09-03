@@ -1,1 +1,1 @@
-### This repo contains tricks for coding in oython.
+### This repo contains tricks for coding in python.
